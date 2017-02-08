@@ -1,0 +1,27 @@
+---
+title: "Croatian Stopwords"
+output: md_document
+bibliography: bibliography.bibtex
+---
+
+## English
+
+This is a collection of Croatian Stopwords. There are 4 versions of Stopwords:
+
+1. **cro_sw_min_d** - minimal set of words with diacritics included
+2. **cro_sw_min** - same set but diacritics converted to their basic form (*hoćeš* -> *hoces*) 
+3. **cro_sw_full_d** - expanded set of words with diacritics included
+4. **cro_sw_full** - expanded set without diacritics
+
+People often chose not to write diacritics, especially on social networks, so a set of stopwords without them is needed to perform matching. This also means that some words change their meaning i.e. *što* becomes *sto*, which is the Croatian word for "one hundred". Keep that in mind.
+
+The minimal set was taken from an existing [repository](https://github.com/6/stopwords-json/blob/master/dist/hr.json).
+
+The full set was created by filtering terms with high frequences. Term frequency database - [@hrlex].
+
+
+## Croatian
+
+TODO
+
+# References
